@@ -1,0 +1,23 @@
+body{
+    background-color: limegreen;
+}
+h1{
+    text-align: center;
+    color: blanchedalmond;
+    text-indent: 30px;
+}
+h2{
+    text-align: left;
+    color: blue;
+    text-transform: initial;
+}
+h3{
+    text-align: right;
+    color: palevioletred;
+    text-decoration: line-through;
+}
+p{
+    text-align: center;
+    color: palegreen;
+    letter-spacing: normal;
+}
