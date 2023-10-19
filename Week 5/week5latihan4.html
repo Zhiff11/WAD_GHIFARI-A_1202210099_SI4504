@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validasi Input dengan JavaScript</title>
+</head>
+<body>
+  <h1>Validasi Input dengan JavaScript</h1>
+  <p>Silakan masukkan angka antara 1 dan 10:</p>
+  <input type="number" id="numb">
+  <button type="button" onclick="validasi()">Submit</button>
+  <p id="demo"></p>
+
+  <script>
+    function validasi() {
+      var x, text;
+
+      // Dapatkan nilai dari input field dengan id="numb"
+      x = document.getElementById("numb").value;
+
+      // Jika x bukan Angka atau kurang dari satu atau lebih dari 10
+      if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input tidak valid";
+      } else {
+        text = "Input OK";
+      }
+
+      // Tampilkan teks di elemen dengan id="demo"
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Can Add Events</title>
+</head>
+<body>
+  <h1>JavaScript Can Add Events</h1>
+  <p>Klik tombol untuk menambahkan acara.</p>
+  <button type="button" onclick="myFunction()">Click Me</button>
+  <script>
+  function myFunction() {
+    document.getElementById("myImage").addEventListener("click", function() {
+      alert("Anda mengklik gambar!");
+    });
+  }
+  </script>
+  <img id="myImage" src="arip.jpeg" width="500" height="500">
+</body>
+</html>
